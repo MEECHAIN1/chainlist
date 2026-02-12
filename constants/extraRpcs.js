@@ -2887,16 +2887,6 @@ export const extraRpcs = {
         trackingDetails: privacyStatement.tatum,
       },
       {
-        url: "https://0xrpc.io/gno",
-        tracking: "none",
-        trackingDetails: privacyStatement["0xRPC"],
-      },
-      {
-        url: "wss://0xrpc.io/gno",
-        tracking: "none",
-        trackingDetails: privacyStatement["0xRPC"],
-      },
-      {
         url: "https://gnosis.therpc.io",
         tracking: "limited",
         trackingDetails: privacyStatement.therpc,
@@ -4823,6 +4813,16 @@ export const extraRpcs = {
         tracking: "limited",
         trackingDetails: privacyStatement.GlobalStake,
       },
+      {
+        url: "https://megaeth.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "wss://megaeth.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
     ],
   },
   2612: {
@@ -5213,6 +5213,12 @@ export const extraRpcs = {
   },
   70002: {
     rpcs: ["https://proxy2.thinkiumrpc.net/"],
+  },
+  70003: {
+    rpcs: [
+      "https://rpc.pyrachain.io",
+      "wss://ws.pyrachain.io",
+    ],
   },
   70103: {
     rpcs: ["https://proxy103.thinkiumrpc.net/"],
@@ -7591,6 +7597,9 @@ export const extraRpcs = {
       },
     ],
   },
+  5577: {
+  rpcs: ["https://rpc.taaqo.com"]
+},
   1750: {
     rpcs: [
       "https://rpc.metall2.com",
@@ -7626,6 +7635,7 @@ export const extraRpcs = {
       "https://moksha-vana-rpc.tech-coha05.xyz",
     ],
   },
+
   55244: {
     rpcs: [
       {
@@ -9499,7 +9509,31 @@ export const extraRpcs = {
         trackingDetails: privacyStatement.Cosmostation
       }
     ]
-  }
+  },
+  1122: {
+    rpcs: [
+      {
+        url: "https://rpc.luxeports.com",
+        tracking: "none",
+        trackingDetails: "LuxePorts does not collect or store any user information (IP addresses, locations, etc.) through the RPC. All data transmitted is solely for blockchain transactions.",
+      },
+      {
+        url: "https://erpc.luxeports.com",
+        tracking: "none",
+        trackingDetails: "LuxePorts does not collect or store any user information (IP addresses, locations, etc.) through the RPC. All data transmitted is solely for blockchain transactions.",
+      },
+      {
+        url: "wss://rpc.luxeports.com/ws",
+        tracking: "none",
+        trackingDetails: "LuxePorts does not collect or store any user information (IP addresses, locations, etc.) through the RPC. All data transmitted is solely for blockchain transactions.",
+      },
+      {
+        url: "wss://erpc.luxeports.com/ws",
+        tracking: "none",
+        trackingDetails: "LuxePorts does not collect or store any user information (IP addresses, locations, etc.) through the RPC. All data transmitted is solely for blockchain transactions.",
+      },
+    ],
+  },
 };
 
 const allExtraRpcs = mergeDeep(llamaNodesRpcs, extraRpcs);
